@@ -1,81 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samin Yasar Sunny — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Samin Yasar — Portfolio</title>
+  <meta name="description" content="Samin Yasar — CSE student, NASA Space Apps winner. Developer of Kothon, Born To Do, Jarvis. Contact: samin@yasar.earth" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/photo-hero.jpg">
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/3c1d5a2f2a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <nav>
-    <h2 class="logo">YASAR<span>.EARTH</span></h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>Hello, I'm <span>Samin Yasar Sunny</span></h1>
-    <p>NASA Space Apps Challenge global nominee • CSE Student • Developer • App Builder  
-      <br>Creator of KOTHON us, Born To Do, Jarvis AI Assistant
-    </p>
-    <a href="#projects" class="btn">View My Work</a>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I am Samin Yasar Sunny, a CSE student at Mymensingh Engineering College(MEC).  
-      I build apps, AI assistants, tools, and modern solutions with passion.  
-      I love Robotics and technology, lead and creative innovation.
-    </p>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
-
-    <div class="project-box">
-      <h3>KOTHON App</h3>
-      <p>Anonymous messaging app like NGL, Chiti.me — built in Flutter.</p>
-      <a href="https://kothon.yasar.earth">Visit Page</a>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <h1>Samin <span>Yasar</span></h1>
+        <p class="sub">Passionate CSE Student • NASA Space Apps Winner</p>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="project-box">
-      <h3>Born To Do — To-Do App</h3>
-      <p>Offline to-do list app with reminders, categories, backup.</p>
-      <a href="https://todo.yasar.earth">Visit Page</a>
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero-left">
+        <h2>Hello, I'm <strong>Samin Yasar</strong></h2>
+        <p class="lead">Computer Science & Engineering student at Mymensingh Engineering College. Developer — apps & AI assistants. NASA Space Apps Challenge winner.</p>
+
+        <div class="cta-row">
+          <a class="btn" href="assets/resume.pdf" download>Download CV</a>
+          <a class="btn ghost" href="#projects">View Projects</a>
+        </div>
+
+        <ul class="contact-mini">
+          <li><i class="fas fa-phone"></i> +8801865239302</li>
+          <li><i class="fas fa-map-marker-alt"></i> Mymensingh</li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:samin@yasar.earth">samin@yasar.earth</a></li>
+        </ul>
+
+        <div class="socials">
+          <a href="https://facebook.com/share/16eh8m5UWJ/" target="_blank" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/yasar_2.00" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/yasar-sys" target="_blank" aria-label="github"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-wrap">
+          <img src="assets/photo-hero.jpg" alt="Samin Yasar" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / Overview -->
+    <section id="about" class="container about">
+      <h2>Overview</h2>
+      <p class="card">
+        I am Samin Yasar — a passionate and focused Computer Science and Engineering student from Mymensingh Engineering College, driven by the desire to turn ideas into impactful digital products. Recognized for leadership potential and the ability to take initiative in team settings and manage tasks efficiently.
+      </p>
+    </section>
+
+    <!-- Achievements & Projects -->
+    <section id="projects" class="container projects">
+      <div class="left-col">
+        <h2>Achievements & Activities</h2>
+
+        <ul class="achieve">
+          <li><strong>Partner Developer</strong> — Appkpure.com (2025 – Present)</li>
+          <li><strong>Department Representative</strong> — ResearchOrbit</li>
+          <li><strong>Projects:</strong> Born To Do (Flutter/Dart/SQLite) — offline to-do app with voice input, dark/light mode, reminders, backup.</li>
+          <li><strong>Regional Olympiad 2020 Winner</strong> — Bangladesh Junior Science Olympiad (BDJSO)</li>
+          <li><strong>Class Prefect</strong> — Mongla Port Secondary School (2016–2020)</li>
+          <li><strong>Public Speaking</strong> — Upazilla champion 2020; District champ 2019,2018</li>
+          <li><strong>ISSB Selected (Recommended)</strong> — 93 BMA LC (BN 25/A)</li>
+        </ul>
+      </div>
+
+      <div class="right-col">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+          <h3>KOTHON — Anonymous Messaging</h3>
+          <p>Flutter + Firebase. Instagram-style link sharing, anonymous messages, dynamic links.</p>
+          <a href="#" class="link">Live / Demo</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Born To Do — Offline To-Do App</h3>
+          <p>Flutter, SQLite, local notifications, task categories, backup & restore.</p>
+          <a href="#" class="link">Play Store / APK</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Jarvis AI Assistant — Desktop</h3>
+          <p>Voice recognition, TTS, web search, WhatsApp messaging, GUI assistant (Python).</p>
+          <a href="#" class="link">Code & Docs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="container education">
+      <h2>Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <h4>Bachelor of Science in Computer Science & Engineering</h4>
+          <p>(2024 – Present) Mymensingh Engineering College, Mymensingh</p>
+        </div>
+
+        <div class="edu-card">
+          <h4>SSC & HSC</h4>
+          <p>BN School and College Mongla — GPA 5.00<br>Govt Sundarban Adarsha College Khulna — GPA 5.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Public Speaking <div class="bar"><span style="width:85%"></span></div></li>
+        <li>Decision Making <div class="bar"><span style="width:80%"></span></div></li>
+        <li>Team Leadership <div class="bar"><span style="width:82%"></span></div></li>
+        <li>Presentation Skills <div class="bar"><span style="width:78%"></span></div></li>
+        <li>Event Management <div class="bar"><span style="width:70%"></span></div></li>
+        <li>Goal-Oriented Planning <div class="bar"><span style="width:80%"></span></div></li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container contact">
+      <h2>Contact Me</h2>
+
+      <div class="contact-grid">
+        <div class="contact-left card">
+          <p><strong>Email:</strong> <a href="mailto:samin@yasar.earth">samin@yasar.earth</a></p>
+          <p><strong>Phone:</strong> +8801865239302</p>
+          <p><strong>Location:</strong> Mymensingh</p>
+
+          <div class="socials">
+            <a href="https://facebook.com/share/16eh8m5UWJ/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/samin_yasar_sunny/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/yasar-sys" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-right card">
+          <form id="contactForm" action="https://formspree.io/f/yourformid" method="POST">
+            <!-- Replace the action URL with your Formspree endpoint -->
+            <label for="name">Name</label>
+            <input id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Samin Yasar Sunny • Built with ❤️ • <a href="assets/resume.pdf" download>Download CV</a></p>
     </div>
+  </footer>
 
-    <div class="project-box">
-      <h3>Jarvis AI Desktop Assistant</h3>
-      <p>Your personal AI that can speak, search, open apps, send WhatsApp messages, and more.</p>
-      <a href="https://jarvis.yasar.earth">Visit Page</a>
-    </div>
-
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: 
-        <a href="mailto:samin@yasar.earth"><strong>samin@yasar.earth</strong></a>
-    </p>
-    
-    <div class="social">
-      <a href="https://facebook.com/share/16eh8m5UWJ/"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/samin_yasar_sunny/"><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com"><i class="fab fa-github"></i></a>
-    </div>
-  </section>
-
+  <script src="script.js"></script>
 </body>
 </html>
+
 
